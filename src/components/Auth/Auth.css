@@ -1,0 +1,23 @@
+.auth-box {
+  max-width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 8px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
