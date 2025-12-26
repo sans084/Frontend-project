@@ -1,65 +1,158 @@
-# Getting Started with Create React App
+Perfect 👍
+Here is a **clean, professional README.md** you can directly copy-paste into your project.
+It is written exactly in the way **internship evaluators expect**.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# 📘 Marwadtech Front-End Internship Assessment
 
-In the project directory, you can run:
+## 📌 Project Overview
 
-### `npm start`
+This project is a front-end management application developed as part of the **Marwadtech Front-End Developer Internship Assessment**.
+The application demonstrates authentication flow, session persistence, product management with pagination, analytics dashboard, and media upload handling using **React.js**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The focus of this project is:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Clean component architecture
+* Proper state management
+* Real-time validation
+* UI functionality aligned with real-world use cases
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+* **React.js**
+* **React Router DOM**
+* **JavaScript (ES6)**
+* **CSS**
+* **LocalStorage** (for session persistence)
+* **Mock Data** (no external APIs)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Features Implemented
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔐 1. Authentication & Session Management
 
-### `npm run eject`
+* Login and Registration screens
+* Real-time mobile number validation (10-digit check)
+* Mock login logic
+* Session persistence using `localStorage`
+* Protected routes (user stays logged in after refresh)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📦 2. Product Catalog with Pagination
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Product list displaying:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  * Name
+  * Price
+  * Category
+  * Stock
+  * Status (Active / Inactive)
+* Numbered pagination (10 products per page)
+* Search products by name
+* Filter products by status
+* Reusable `ProductCard` component
+* Mock data of 30 products
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 📊 3. Analytics Dashboard
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Statistic cards showing:
 
-### Code Splitting
+  * Total Users
+  * Total Products
+  * Total Orders
+  * Total Revenue
+* Date filter simulation:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  * Today
+  * Yesterday
+  * Weekly
+  * Monthly
+* Dashboard updates dynamically based on selection
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🖼️ 4. Media Upload & Preview
 
-### Making a Progressive Web App
+* Image upload screen
+* File size validation (Max 5MB)
+* Instant image preview before upload
+* Success state after upload
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+src/
+├─ components/
+│  ├─ Auth/
+│  │  ├─ Login.js
+│  │  └─ Register.js
+│  ├─ Dashboard/
+│  │  └─ Dashboard.js
+│  ├─ Products/
+│  │  ├─ ProductList.js
+│  │  └─ ProductCard.js
+│  └─ Media/
+│     └─ Upload.js
+├─ App.js
+├─ App.css
+├─ index.js
+├─ index.css
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 2️⃣ Start the application
+
+```bash
+npm start
+```
+
+### 3️⃣ Login credentials (Mock)
+
+```
+Mobile Number: 1234567890
+```
+
+---
+
+## 🧠 Key Highlights
+
+* No external APIs used (mocked internal data)
+* Clean and reusable component structure
+* Real-world login/session behavior
+* Pagination logic strictly follows requirements
+* Assessment-focused implementation
+
+---
+
+## 📎 Submission Details
+
+* GitHub Repository: **(Add your GitHub repo link here)**
+* Hosted locally using React development server
+
+---
+
+## 🙌 Author
+
+**Sanskriti**
+
 
 ### Deployment
 
