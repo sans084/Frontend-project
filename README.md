@@ -1,9 +1,3 @@
-Perfect 👍
-Here is a **clean, professional README.md** you can directly copy-paste into your project.
-It is written exactly in the way **internship evaluators expect**.
-
----
-
 # 📘 Marwadtech Front-End Internship Assessment
 
 ## 📌 Project Overview
