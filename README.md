@@ -2,15 +2,10 @@
 
 ## 📌 Project Overview
 
-This project is a front-end management application developed as part of the **Marwadtech Front-End Developer Internship Assessment**.
-The application demonstrates authentication flow, session persistence, product management with pagination, analytics dashboard, and media upload handling using **React.js**.
+This project is a **front-end management application** developed as part of the **Marwadtech Front-End Developer Internship Assessment**.
+It demonstrates core front-end concepts such as authentication, session persistence, routing, pagination, filtering, dashboard analytics, and media handling using **React.js**.
 
-The focus of this project is:
-
-* Clean component architecture
-* Proper state management
-* Real-time validation
-* UI functionality aligned with real-world use cases
+The application simulates a real-world environment using **mock data and internal logic**, without relying on external APIs.
 
 ---
 
@@ -19,9 +14,8 @@ The focus of this project is:
 * **React.js**
 * **React Router DOM**
 * **JavaScript (ES6)**
-* **CSS**
+* **CSS (Modular styling per feature)**
 * **LocalStorage** (for session persistence)
-* **Mock Data** (no external APIs)
 
 ---
 
@@ -30,14 +24,24 @@ The focus of this project is:
 ### 🔐 1. Authentication & Session Management
 
 * Login and Registration screens
-* Real-time mobile number validation (10-digit check)
+* Real-time mobile number validation (10-digit validation)
 * Mock login logic
 * Session persistence using `localStorage`
-* Protected routes (user stays logged in after refresh)
+* Protected routes (user remains logged in after refresh)
+* Dedicated authentication styling using `Auth.css`
 
 ---
 
-### 📦 2. Product Catalog with Pagination
+### 🧭 2. Navigation Bar
+
+* Reusable `Navbar` component
+* Navigation between Dashboard, Products, and Upload pages
+* Visible only after successful login
+* Styled using `Navbar.css`
+
+---
+
+### 📦 3. Product Catalog with Pagination
 
 * Product list displaying:
 
@@ -49,53 +53,62 @@ The focus of this project is:
 * Numbered pagination (10 products per page)
 * Search products by name
 * Filter products by status
-* Reusable `ProductCard` component
+* Products managed within a single component (no separate ProductCard)
+* Styled using `Product.css`
 * Mock data of 30 products
 
 ---
 
-### 📊 3. Analytics Dashboard
+### 📊 4. Analytics Dashboard
 
-* Statistic cards showing:
+* Dashboard displaying statistic cards:
 
   * Total Users
   * Total Products
   * Total Orders
   * Total Revenue
-* Date filter simulation:
+* Date-based filter simulation:
 
   * Today
   * Yesterday
   * Weekly
   * Monthly
-* Dashboard updates dynamically based on selection
+* Dynamic data update based on selected filter
+* Styled using `Dashboard.css`
 
 ---
 
-### 🖼️ 4. Media Upload & Preview
+### 🖼️ 5. Media Upload & Preview
 
-* Image upload screen
-* File size validation (Max 5MB)
+* Dedicated image upload page
+* File size validation (Maximum 5MB)
 * Instant image preview before upload
 * Success state after upload
+* Styled using `Upload.css`
 
 ---
 
-## 📂 Project Structure
+## 📂 Updated Project Structure
 
 ```
 src/
 ├─ components/
 │  ├─ Auth/
 │  │  ├─ Login.js
-│  │  └─ Register.js
+│  │  ├─ Register.js
+│  │  └─ Auth.css
+│  ├─ Navbar/
+│  │  ├─ Navbar.js
+│  │  └─ Navbar.css
 │  ├─ Dashboard/
-│  │  └─ Dashboard.js
+│  │  ├─ Dashboard.js
+│  │  └─ Dashboard.css
 │  ├─ Products/
 │  │  ├─ ProductList.js
-│  │  └─ ProductCard.js
+│  │  └─ Product.css
 │  └─ Media/
-│     └─ Upload.js
+│     ├─ Upload.js
+│     └─ Upload.css
 ├─ App.js
 ├─ App.css
 ├─ index.js
@@ -118,7 +131,7 @@ npm install
 npm start
 ```
 
-### 3️⃣ Login credentials (Mock)
+### 3️⃣ Mock Login Credentials
 
 ```
 Mobile Number: 1234567890
@@ -128,30 +141,26 @@ Mobile Number: 1234567890
 
 ## 🧠 Key Highlights
 
-* No external APIs used (mocked internal data)
-* Clean and reusable component structure
-* Real-world login/session behavior
-* Pagination logic strictly follows requirements
-* Assessment-focused implementation
+* Clean and modular folder structure
+* Feature-based CSS separation
+* Proper session handling and protected routing
+* Pagination implemented exactly as required (10 items per page)
+* No external APIs — mock data used for simulation
+* UI designed with clarity and usability in mind
 
 ---
 
 ## 📎 Submission Details
 
-* GitHub Repository: **(Add your GitHub repo link here)**
-* Hosted locally using React development server
+* **GitHub Repository:** *(https://github.com/sans084/Frontend-project)*
+* **Framework Used:** React.js
+* **Assessment Type:** Front-End Internship Technical Assessment
 
 ---
 
-## 🙌 Author
+## Author
 
 **Sanskriti**
 
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
